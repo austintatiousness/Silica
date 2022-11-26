@@ -6,13 +6,13 @@ import PackageDescription
 let package = Package(
     name: "Silica",
     products: [
-        .library(name: "Silica", targets: ["Silica"])
+        .library(name: "Silica2", targets: ["Silica2"])
     ],
     dependencies: [
         .package(url: "https://github.com/austintatiousness/Cairo.git", .branch("master"))
     ],
     targets: [
-        .target(name: "Silica", dependencies: ["Cairo"]),
+        .target(name: "Silica2", dependencies: ["Cairo"]),
         .testTarget(name: "SilicaTests", dependencies: ["Silica"])
     ]
 
